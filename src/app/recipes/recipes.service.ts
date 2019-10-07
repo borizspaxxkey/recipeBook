@@ -18,7 +18,7 @@ export class RecipesService {
       imageUrl: 'https://tse1.mm.bing.net/th?id=OIP.jCBsGtsGNCG8Ng11KyiZDAHaF7&pid=Api&rs=1&c=1&qlt=95&w=133&h=106',
       ingredients: ['Spaghetti', 'Meat']
     }
-  ]
+  ];
 
   constructor() { }
 
@@ -32,5 +32,11 @@ export class RecipesService {
         return recipe.id === recipeId;
       })
     };
+  }
+
+  deleteRecipe(recipeId: string) {
+    this.recipes = this.recipes.filter(recipe => {
+      return recipe.id !== recipeId;
+    });
   }
 }
