@@ -1,7 +1,10 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.ebuka.recipes",
   "appName": "ionic-angular-course",
   "bundledWebRuntime": false,
   "npmClient": "npm",
-  "webDir": "www"
+  "webDir": "www",
+  "server": {
+    "url": "http://localhost:8100"
+  }
 }
